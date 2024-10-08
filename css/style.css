@@ -146,3 +146,6 @@ body {
     background-color: var(--primary-color);
     color:white;
 }
+.project {
+    background-color: var(--primary-color);
+}
