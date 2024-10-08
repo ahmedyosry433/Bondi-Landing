@@ -160,3 +160,7 @@ body {
 .subscribe .input-felid:focus {
     outline: none;
 }
+
+.footer {
+    background-color: var(--primary-color);
+}
