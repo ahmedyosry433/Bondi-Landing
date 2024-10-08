@@ -137,3 +137,12 @@ body {
 .stuff .description {
     max-width: 500px;
 }
+
+.team {
+    background-color: var(--light-primary-color);
+    
+}
+.team .box h4 {
+    background-color: var(--primary-color);
+    color:white;
+}
