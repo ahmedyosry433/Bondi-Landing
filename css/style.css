@@ -149,3 +149,14 @@ body {
 .project {
     background-color: var(--primary-color);
 }
+
+.subscribe {
+    background-color: lightgray;
+}
+.subscribe .input-felid {
+    border: none;
+    border-bottom: 1px solid var(--light-primary-color);
+}
+.subscribe .input-felid:focus {
+    outline: none;
+}
