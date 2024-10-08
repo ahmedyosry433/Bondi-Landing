@@ -43,8 +43,19 @@ body {
 
 }
 .main-btn {
-    background-color: beige;
+    background-color: white;
     padding: 0.5rem 1.5rem;
+    text-transform: capitalize;
+}
+.secondery-btn {
+    background-color: black;
+    text-transform: capitalize;
+    color: white;
+    padding: 0.5rem 1.5rem;
+}
+.secondery-btn:hover {
+    background-color: white;
+    color: black;
 }
 .main-btn:hover {
     
@@ -88,9 +99,37 @@ body {
 }
 .our-work ul .active {
     background-color: white;
-    border-radius: 10px;
 }
 .our-work ul li {
     padding: 0.5rem 1rem;
     cursor: pointer;
+    
+}
+.our-work ul li:not(.active):hover {
+    color: var(--primary-color);
+}
+.our-work .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    background-color: rgb(245 239 174 / 52%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: all 0.3s ease-in;
+
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px ));
+} 
+.our-work .box:hover::before {
+    transform: translateX(0);
+
 }
